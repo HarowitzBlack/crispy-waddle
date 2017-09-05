@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+
+	@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+	body{
+
+		width: 100%;
+		height: 100%;
+		background-color: #f9f9f9;
+		overflow: hidden;
+
+	}
+
+	h1{
+		vertical-align: middle;
+		text-align: center;
+		word-spacing: 4;
+		position: relative;
+		top:100px;
+		font-family: 'Oxygen', sans-serif;
+		color:#666;
+		font-weight: 100;
+	}
+
+	.button-container{
+		width:600px;
+		height: auto; 
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin: 0px auto;
+		padding: 20px;
+		position: relative;
+		top:150px;
+	}
+
+	button{
+		width: auto;
+		height: auto;
+		border:solid 1px #aaa;
+		border-radius: 10px;
+		font-family: 'Oxygen', sans-serif;
+		cursor: pointer;
+		margin: 15px;
+		padding: 15px;
+
+	}
+
+	.green-earth{
+		background: -moz-linear-gradient(bottom left,#42f48f,#41f4b2,#7be5be);
+	}
+
+	.green-earth:hover{
+		transition: 0.2s ease;
+		border:solid 1px #949695;
+		background: -moz-linear-gradient(bottom left,#42f48f,#41f4b2,#7be5be);
+		box-shadow: 1px 1px 1px #aaa;
+	}
+
+	.green-earth:active{
+		border:solid 1px #a7aaa9;
+		box-shadow: 0px 0px 0px #aaa;
+
+	}
+
+	.night-club{
+
+		background: -moz-linear-gradient(bottom left,#760dc6,#c60cbc,#c60c88);
+		transition: 0.4s;
+
+	}
+
+	.night-club:hover{
+		transition: 0.4s all;
+		border:solid 1px #aaa;
+		background: -moz-linear-gradient(bottom right,#760dc6,#c60cbc,#c60c88);
+		box-shadow: 1px 1px 2px #aaa;
+	}
+
+	.night-club:active{
+		border:solid 1px #db76b9;
+		box-shadow: 0px 0px 0px #aaa;
+
+	}
+
+	.chill-out{
+		background: -moz-linear-gradient(bottom left,#35d3e8,#1b86e5,#3f50bf);
+		transition: 0.4s;
+	}
+
+	.chill-out:hover{
+		transition: 0.4s all;
+		border:solid 1px #aaa;
+		background: -moz-linear-gradient(bottom right,#35d3e8,#1b86e5,#3f50bf);
+		box-shadow: 1px 1px 2px #aaa;
+	}
+
+	.chill-out:active{
+		border:solid 1px #aaa;
+		box-shadow: 0px 0px 0px #aaa;
+
+	}
+
+	.dark-night{
+
+		background: -moz-linear-gradient(bottom left,#2c383a,#1b3551,#422241);
+		transition: 0.4s;
+
+	}
+
+	.dark-night:hover{
+		transition: 0.2s;
+		animation: darknight_anim 5s infinite;
+		box-shadow: 1px 1px 2px #aaa;
+		
+	}
+
+	.yellow-maple{
+		background: -moz-linear-gradient(bottom left,#e8e822,#f2cd2b,#f7b147);
+		transition: 0.4s;
+
+	}
+
+
+	.yellow-maple:hover{
+		transition: 0.4s;
+		background: -moz-linear-gradient(bottom right,#e8e822,#f2cd2b,#f7b147);
+		box-shadow: 1px 1px 2px #aaa;
+		
+	}
+
+	.snow-mount{
+		background: -moz-linear-gradient(bottom right,#8adbc8,#46dbd8,#a2bfbe);
+
+	}
+
+
+	@keyframes darknight_anim{
+		0% {
+			background: -moz-linear-gradient(bottom left,#2c383a,#1b3551,#422241);
+
+		}
+		25% {
+			background: -moz-linear-gradient(bottom right,#2c383a,#1b3551,#422241);
+		}
+
+		50% {
+			background: -moz-linear-gradient(bottom left,#2c383a,#1b3551,#422241);
+		}
+
+		100% {
+			background: -moz-linear-gradient(bottom right,#2c383a,#1b3551,#422241);
+		}
+	}
+
+	</style>
+	
+
+</head>
+<body>
+
+<h1>Hello, World! <i class="em em-earth_americas"></i></h1>
+<div class="button-container">
+	<button class = "green-earth"> green earth <i class="em em-rocket"></i></button>
+	<button class = "night-club"> night club<i class="em em-dancers"></i></i></button>
+	<button class = "chill-out"> chill out <i class="em em-shaved_ice"></i></button>
+	<button class = "dark-night"> dark night <i class="em em-sleeping">
+	</i><i class="em em-first_quarter_moon_with_face"></i></button>
+
+	<button class = "yellow-maple"> yellow maple <i class="em em-maple_leaf"></i></button>
+
+	<button class = "snow-mount">snow mountain<i class="em em-snowflake"></i><i class="em em-snowman"></i></button>
+
+
+
+</div>
+</body>
+</html>
