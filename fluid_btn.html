@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Fluid Button</title>
+    <style type="text/css" rel="stylesheet">
+
+    body{
+        background-color: #333;
+    }
+
+    .fbutton{
+        width: 200px;
+        height: 60px;
+        background-color: #f9f9f9;
+        border:solid 2px none;
+        font-family: Ubuntu;
+        padding: 3px;
+        cursor: pointer;
+        margin:0px auto;
+        position: relative;
+        top:200px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    p{
+        text-align: center;
+        position: relative;
+        top:0px;
+    }
+
+
+
+    #box{
+        transition: 0.2s ease;
+        width: 300px;
+        height: 50px;
+        border:solid 1px none;
+        background-color: #42f47d;
+        border-top-right-radius: 40%;
+        animation: fluid 5s infinite;
+        position: relative;
+        top:28px;
+        left:-50px;
+
+    }
+
+    #fluid-txt{
+        font-size: 18px;
+        color:#333;
+        text-align: center;
+        position: relative;
+        top:-30px;
+    }
+
+    @keyframes fluid {
+
+        0% {
+             border-top-left-radius: 80%;
+             border-top-right-radius: 40%;
+             border-bottom-left-radius: 40%;
+             border-bottom-right-radius: 80%;
+           }
+        25% {
+             border-top-left-radius: 50%;
+             border-top-right-radius: 10%;
+             border-bottom-left-radius: 40%;
+             border-bottom-right-radius: 20%;
+            }
+        50% {
+             border-top-left-radius: 10%;
+             border-top-right-radius: 80%;
+             border-bottom-left-radius: 60%;
+             border-bottom-right-radius: 50%;
+             height: 100px;
+            }
+
+        60%{
+            height: 40px;
+            border-radius: 80%;
+        }
+
+        70% {
+                height: 200px;
+                 border-top-left-radius: 30%;
+                 border-top-right-radius: 60%;
+                 border-bottom-left-radius: 70%;
+                 border-bottom-right-radius: 20%;
+                }
+        80% {
+            height: 150px;
+        }
+
+        100% {
+            height: 40px;
+             border-top-left-radius: 80%;
+             border-top-right-radius: 40%;
+             border-bottom-left-radius: 40%;
+             border-bottom-right-radius: 80%;
+          }
+
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class = "fbutton" id = "fluid-btn">
+        <div id="box"></div>
+        <p id="fluid-txt">Fluids</p>
+    </div>
+</body>
+
+</html>
